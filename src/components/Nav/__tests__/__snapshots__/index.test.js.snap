@@ -4,7 +4,6 @@ exports[`Nav component matches snapshot 1`] = `
 <DocumentFragment>
   <header
     class="flex-row px-1"
-    data-testid="header"
   >
     <h2>
       <a
