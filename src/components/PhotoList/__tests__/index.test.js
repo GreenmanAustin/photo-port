@@ -1,21 +1,18 @@
-import React from 'react';
-import { render, cleanup } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import Photolist from '..';
-
-const portrait = "portraits";
+// __tests__/PhotoList.test.js
+import React from 'react'
+import { render, cleanup } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
+import PhotoList from '../'
 
 afterEach(cleanup)
 
-describe('Photolist is rendering', () => {
+describe('PhotoList is rendering', () => {
+  it('renders', () => {
+    render(<PhotoList />);
+  });
 
-    it('renders', () => {
-        render(<Photolist category={portrait} />);
-    });
-
-    it('matches snapshot', () => {
-        const { asFragment } = render(<Photolist category={portrait} />)
-        expect(asFragment()).toMatchSnapshot()
-    })
-
-})
+  it('renders', () => {
+    const { asFragment } = render(<PhotoList />)
+    expect(asFragment()).toMatchSnapshot()
+  });
+});
