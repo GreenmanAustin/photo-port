@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal is rendering renders 1`] = `
+exports[`Modal component matches snapshot DOM node structure 1`] = `
 <DocumentFragment>
   <div
     class="modalBackdrop"
@@ -11,7 +11,7 @@ exports[`Modal is rendering renders 1`] = `
       <h3
         class="modalTitle"
       >
-        Park bench
+        Park bench 
       </h3>
       <img
         alt="current category"
